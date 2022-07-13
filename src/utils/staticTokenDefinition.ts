@@ -22,7 +22,7 @@ export class StaticTokenDefinition {
   static getStaticDefinitions(): Array<StaticTokenDefinition> {
     let staticDefinitions = new Array<StaticTokenDefinition>(6)
 
-    // Add DGD
+    // Add USDC
     let tokenUSDC = new StaticTokenDefinition(
       Address.fromString('0x95A0A7953F9292838C0614D690005D5c716E718E'),
       'USDC',
@@ -31,43 +31,43 @@ export class StaticTokenDefinition {
     )
     staticDefinitions.push(tokenUSDC)
 
-    // Add AAVE
-    let tokenAAVE = new StaticTokenDefinition(
-      Address.fromString('0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9'),
-      'AAVE',
-      'Aave Token',
+    // Add WETH
+    let tokenWETH = new StaticTokenDefinition(
+      Address.fromString('0xb750990F953B36F806d0327678eCFB4eEFd16979'),
+      'WETH',
+      'WETH',
       BigInt.fromI32(18)
     )
-    staticDefinitions.push(tokenAAVE)
+    staticDefinitions.push(tokenWETH)
 
-    // Add LIF
-    let tokenLIF = new StaticTokenDefinition(
-      Address.fromString('0xeb9951021698b42e4399f9cbb6267aa35f82d59d'),
-      'LIF',
-      'Lif',
+    // Add SHIBA
+    let tokenSHIBA = new StaticTokenDefinition(
+      Address.fromString('0xa018034190943D6c8E10218d9F8E8Af491272411'),
+      'SHIBA',
+      'SHIBA',
       BigInt.fromI32(18)
     )
-    staticDefinitions.push(tokenLIF)
+    staticDefinitions.push(tokenSHIBA)
 
-    // Add SVD
-    let tokenSVD = new StaticTokenDefinition(
-      Address.fromString('0xbdeb4b83251fb146687fa19d1c660f99411eefe3'),
-      'SVD',
-      'savedroid',
+    // Add ZED
+    let tokenZED = new StaticTokenDefinition(
+      Address.fromString('0x5c17C48F127D6aE5794b2404F1F8A5CeED419eDf'),
+      'ZED',
+      'ZED',
+      BigInt.fromI32(6)
+    )
+    staticDefinitions.push(tokenZED)
+
+    // Add DAI
+    let tokenTDAI = new StaticTokenDefinition(
+      Address.fromString('0xad43669cbAC863e33449d423261E525de8da0Ff4'),
+      'DAI',
+      'DAI',
       BigInt.fromI32(18)
     )
-    staticDefinitions.push(tokenSVD)
+    staticDefinitions.push(tokenDAI)
 
-    // Add TheDAO
-    let tokenTheDAO = new StaticTokenDefinition(
-      Address.fromString('0xbb9bc244d798123fde783fcc1c72d3bb8c189413'),
-      'TheDAO',
-      'TheDAO',
-      BigInt.fromI32(16)
-    )
-    staticDefinitions.push(tokenTheDAO)
-
-    // Add HPB
+    // Add WCNDL
     let tokenHPB = new StaticTokenDefinition(
       Address.fromString('0x38c6a68304cdefb9bec48bbfaaba5c5b47818bb2'),
       'HPB',
