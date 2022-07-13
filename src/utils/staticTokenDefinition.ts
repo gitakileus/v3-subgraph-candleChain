@@ -59,7 +59,7 @@ export class StaticTokenDefinition {
     staticDefinitions.push(tokenZED)
 
     // Add DAI
-    let tokenTDAI = new StaticTokenDefinition(
+    let tokenDAI = new StaticTokenDefinition(
       Address.fromString('0xad43669cbAC863e33449d423261E525de8da0Ff4'),
       'DAI',
       'DAI',
